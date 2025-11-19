@@ -1,0 +1,17 @@
+.clickableChar {
+  cursor: pointer;
+  color: #1890ff;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  transition: all 0.2s;
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.clickableChar:hover {
+  background-color: #e6f7ff;
+  color: #0050b3;
+  text-decoration-color: #0050b3;
+}
+

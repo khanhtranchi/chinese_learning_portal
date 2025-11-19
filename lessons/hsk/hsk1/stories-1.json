@@ -1,0 +1,919 @@
+{
+  "id": "lesson_002_family",
+  "title": "Giới thiệu Gia đình",
+  "category": "HSK1",
+  "code": "stories-1",
+  "level": "HSK 1 (Sơ cấp)",
+  "description": "Học cách giới thiệu thành viên trong gia đình, nghề nghiệp và sở thích. Phân tích sâu các chữ Hán về con người và hoạt động hàng ngày.",
+  "audio_url": null,
+  "conversation": [
+    {
+      "id": 1,
+      "speaker": "A",
+      "text_cn": "我家有四口人：爸爸、妈妈、哥哥和我。",
+      "text_pinyin": "Wǒjiā yǒu sì kǒu rén: bàba, māma, gēge hé wǒ.",
+      "text_en": "My family has four people: dad, mom, older brother, and me."
+    },
+    {
+      "id": 2,
+      "speaker": "A",
+      "text_cn": "爸爸是老师，妈妈是医生，哥哥是大学生，我是中学生。",
+      "text_pinyin": "Bàba shì lǎoshī, māma shì yīshēng, gēge shì dàxuéshēng, wǒ shì zhōngxuéshēng.",
+      "text_en": "Dad is a teacher, mom is a doctor, brother is a college student, I am a middle school student."
+    },
+    {
+      "id": 3,
+      "speaker": "A",
+      "text_cn": "爸爸喜欢看书，妈妈喜欢做饭，哥哥爱打篮球，我爱听音乐。",
+      "text_pinyin": "Bàba xǐhuan kànshū, māma xǐhuan zuòfàn, gēge ài dǎ lánqiú, wǒ ài tīng yīnyuè.",
+      "text_en": "Dad likes reading, mom likes cooking, brother loves playing basketball, I love listening to music."
+    },
+    {
+      "id": 4,
+      "speaker": "A",
+      "text_cn": "每天晚上，我们一起吃饭。",
+      "text_pinyin": "Měitiān wǎnshang, wǒmen yìqǐ chīfàn.",
+      "text_en": "Every night, we eat dinner together."
+    },
+    {
+      "id": 5,
+      "speaker": "A",
+      "text_cn": "周末，我们去公园玩。",
+      "text_pinyin": "Zhōumò, wǒmen qù gōngyuán wán.",
+      "text_en": "On weekends, we go to the park to play."
+    },
+    {
+      "id": 6,
+      "speaker": "A",
+      "text_cn": "我爱我的家人。",
+      "text_pinyin": "Wǒ ài wǒ de jiārén.",
+      "text_en": "I love my family."
+    }
+  ],
+  "analysis": [
+    {
+      "chunk_cn": "我家",
+      "chunk_pinyin": "Wǒjiā",
+      "chunk_meaning": "Nhà tôi / Gia đình tôi.",
+      "characters": [
+        {
+          "char": "家",
+          "pinyin": "Jiā",
+          "meaning": "Nhà/Gia đình",
+          "mnemonic": "Dưới mái nhà (Miên) có con lợn (Thỉ) tượng trưng cho sự no đủ, sung túc -> Đó là Nhà.",
+          "components": [
+            {
+              "part": "宀",
+              "name": "Miên",
+              "pinyin": "mián",
+              "meaning": "Mái nhà"
+            },
+            {
+              "part": "豕",
+              "name": "Thỉ",
+              "pinyin": "shǐ",
+              "meaning": "Con lợn (heo)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "有",
+      "chunk_pinyin": "Yǒu",
+      "chunk_meaning": "Có.",
+      "characters": [
+        {
+          "char": "有",
+          "pinyin": "Yǒu",
+          "meaning": "Có/Sở hữu",
+          "mnemonic": "Bàn tay (biến thể ở trên) đang cầm miếng thịt (Nhục - biến thể thành Nguyệt) -> Có cái để ăn là 'Có'.",
+          "components": [
+            {
+              "part": "𠂇",
+              "name": "Tả",
+              "pinyin": "zuǒ",
+              "meaning": "Tay trái"
+            },
+            {
+              "part": "月",
+              "name": "Nhục",
+              "pinyin": "ròu",
+              "meaning": "Thịt (gốc là Nhục)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "四口人",
+      "chunk_pinyin": "Sì kǒu rén",
+      "chunk_meaning": "4 người (Dùng lượng từ 'Khẩu' cho thành viên gia đình).",
+      "characters": [
+        {
+          "char": "四",
+          "pinyin": "Sì",
+          "meaning": "Số 4",
+          "mnemonic": "Một không gian (Vi) được chia làm hai (Bát - số 8 tách đôi) phần.",
+          "components": [
+            {
+              "part": "囗",
+              "name": "Vi",
+              "pinyin": "wéi",
+              "meaning": "Vây quanh"
+            },
+            {
+              "part": "儿",
+              "name": "Nhân nhi",
+              "pinyin": "ér",
+              "meaning": "Chân người"
+            }
+          ]
+        },
+        {
+          "char": "口",
+          "pinyin": "Kǒu",
+          "meaning": "Miệng/Lượng từ",
+          "mnemonic": "Hình cái miệng mở ra. Nhà có bao nhiêu cái 'miệng' ăn thì là bấy nhiêu người.",
+          "components": [
+            {
+              "part": "口",
+              "name": "Khẩu",
+              "pinyin": "kǒu",
+              "meaning": "Miệng"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "爸爸",
+      "chunk_pinyin": "Bàba",
+      "chunk_meaning": "Bố/Ba.",
+      "characters": [
+        {
+          "char": "爸",
+          "pinyin": "Bà",
+          "meaning": "Bố",
+          "mnemonic": "Người cha (Phụ) luôn mong mỏi (Ba - trông mong) con mình khôn lớn.",
+          "components": [
+            { "part": "父", "name": "Phụ", "pinyin": "fù", "meaning": "Cha" },
+            {
+              "part": "巴",
+              "name": "Ba",
+              "pinyin": "bā",
+              "meaning": "Mong muốn/Con trăn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "妈妈",
+      "chunk_pinyin": "Māma",
+      "chunk_meaning": "Mẹ/Má.",
+      "characters": [
+        {
+          "char": "妈",
+          "pinyin": "Mā",
+          "meaning": "Mẹ",
+          "mnemonic": "Người phụ nữ (Nữ) làm việc vất vả, nhanh nhẹn như con ngựa (Mã) chính là Mẹ.",
+          "components": [
+            { "part": "女", "name": "Nữ", "pinyin": "nǚ", "meaning": "Phụ nữ" },
+            {
+              "part": "马",
+              "name": "Mã",
+              "pinyin": "mǎ",
+              "meaning": "Con ngựa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "哥哥",
+      "chunk_pinyin": "Gēge",
+      "chunk_meaning": "Anh trai.",
+      "characters": [
+        {
+          "char": "哥",
+          "pinyin": "Gē",
+          "meaning": "Anh",
+          "mnemonic": "Hai chữ 'Khả' (Kě) chồng lên nhau. Anh trai là người có khả năng (Khả) gấp đôi em.",
+          "components": [
+            {
+              "part": "可",
+              "name": "Khả",
+              "pinyin": "kě",
+              "meaning": "Khả năng"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "和",
+      "chunk_pinyin": "Hé",
+      "chunk_meaning": "Và (Liên từ).",
+      "characters": [
+        {
+          "char": "和",
+          "pinyin": "Hé",
+          "meaning": "Hòa/Và",
+          "mnemonic": "Cây lúa (Hòa) chia cho cái miệng (Khẩu) ăn -> Mọi người đều có ăn là sự 'Hòa' bình/Và.",
+          "components": [
+            {
+              "part": "禾",
+              "name": "Hòa",
+              "pinyin": "hé",
+              "meaning": "Cây lúa"
+            },
+            {
+              "part": "口",
+              "name": "Khẩu",
+              "pinyin": "kǒu",
+              "meaning": "Miệng"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "是",
+      "chunk_pinyin": "Shì",
+      "chunk_meaning": "Là (Động từ tobe).",
+      "characters": [
+        {
+          "char": "是",
+          "pinyin": "Shì",
+          "meaning": "Là/Đúng/Thị",
+          "mnemonic": "Mặt trời (Nhật) luôn đi đúng (Sơ - chính xác) quy luật. Chân lý là ánh sáng mặt trời.",
+          "components": [
+            {
+              "part": "日",
+              "name": "Nhật",
+              "pinyin": "rì",
+              "meaning": "Mặt trời"
+            },
+            {
+              "part": "疋",
+              "name": "Sơ/Thất",
+              "pinyin": "shū",
+              "meaning": "Chân/Đúng"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "老师",
+      "chunk_pinyin": "Lǎoshī",
+      "chunk_meaning": "Giáo viên / Thầy cô giáo.",
+      "characters": [
+        {
+          "char": "老",
+          "pinyin": "Lǎo",
+          "meaning": "Lão/Già/Cũ",
+          "mnemonic": "Hình ảnh ông già tóc dài, tay chống gậy (cái thìa - Chủy).",
+          "components": [
+            { "part": "土", "name": "Thổ", "pinyin": "tǔ", "meaning": "Đất" },
+            {
+              "part": "匕",
+              "name": "Chủy",
+              "pinyin": "bǐ",
+              "meaning": "Cái thìa/Gậy"
+            }
+          ]
+        },
+        {
+          "char": "师",
+          "pinyin": "Shī",
+          "meaning": "Sư/Thầy",
+          "mnemonic": "Người cầm cờ lệnh (Cân - cái khăn/cờ) đi vòng quanh (tượng hình) dạy dỗ mọi người là Thầy.",
+          "components": [
+            {
+              "part": "巾",
+              "name": "Cân",
+              "pinyin": "jīn",
+              "meaning": "Cái khăn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "医生",
+      "chunk_pinyin": "Yīshēng",
+      "chunk_meaning": "Bác sĩ.",
+      "characters": [
+        {
+          "char": "医",
+          "pinyin": "Yī",
+          "meaning": "Y (Thuốc)",
+          "mnemonic": "Mũi tên (Thỉ) bắn vào người, phải bỏ vào hộp/giỏ (Phương) để chữa trị.",
+          "components": [
+            {
+              "part": "匚",
+              "name": "Phương",
+              "pinyin": "fāng",
+              "meaning": "Cái hộp/tủ"
+            },
+            {
+              "part": "矢",
+              "name": "Thỉ",
+              "pinyin": "shǐ",
+              "meaning": "Mũi tên"
+            }
+          ]
+        },
+        {
+          "char": "生",
+          "pinyin": "Shēng",
+          "meaning": "Sinh/Sống",
+          "mnemonic": "Hình ảnh mầm cây đang mọc lên từ mặt đất -> Sự sống.",
+          "components": [
+            {
+              "part": "龶",
+              "name": "Sinh",
+              "pinyin": "shēng",
+              "meaning": "Mầm cây"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "大学生",
+      "chunk_pinyin": "Dàxuéshēng",
+      "chunk_meaning": "Sinh viên đại học.",
+      "characters": [
+        {
+          "char": "大",
+          "pinyin": "Dà",
+          "meaning": "Đại/To lớn",
+          "mnemonic": "Người (Nhân) dang rộng hai tay hai chân ra -> Rất to lớn.",
+          "components": [
+            {
+              "part": "人",
+              "name": "Nhân",
+              "pinyin": "rén",
+              "meaning": "Người"
+            }
+          ]
+        },
+        {
+          "char": "学",
+          "pinyin": "Xué",
+          "meaning": "Học",
+          "mnemonic": "Đứa con (Tử) ở dưới mái trường (Miên) đội mũ cử nhân (dấu chấm) để đi học.",
+          "components": [
+            {
+              "part": "宀",
+              "name": "Miên",
+              "pinyin": "mián",
+              "meaning": "Mái nhà"
+            },
+            { "part": "子", "name": "Tử", "pinyin": "zǐ", "meaning": "Con cái" }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "喜欢",
+      "chunk_pinyin": "Xǐhuan",
+      "chunk_meaning": "Thích (Vui vẻ).",
+      "characters": [
+        {
+          "char": "喜",
+          "pinyin": "Xǐ",
+          "meaning": "Hỷ/Vui",
+          "mnemonic": "Trống (Cổ - trên) đánh tưng bừng, miệng (Khẩu) cười ha ha -> Rất vui (Hỷ).",
+          "components": [
+            { "part": "士", "name": "Sĩ", "pinyin": "shì", "meaning": "Kẻ sĩ" },
+            {
+              "part": "口",
+              "name": "Khẩu",
+              "pinyin": "kǒu",
+              "meaning": "Miệng"
+            }
+          ]
+        },
+        {
+          "char": "欢",
+          "pinyin": "Huan",
+          "meaning": "Hoan/Vui",
+          "mnemonic": "Con chim (Hựu - biến thể) đang há miệng (Khiếm - thiếu/ngáp) chờ ăn một cách hân hoan.",
+          "components": [
+            {
+              "part": "又",
+              "name": "Hựu",
+              "pinyin": "yòu",
+              "meaning": "Lại/Tay"
+            },
+            {
+              "part": "欠",
+              "name": "Khiếm",
+              "pinyin": "qiàn",
+              "meaning": "Thiếu/Ngáp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "看书",
+      "chunk_pinyin": "Kànshū",
+      "chunk_meaning": "Đọc sách (Nhìn sách).",
+      "characters": [
+        {
+          "char": "看",
+          "pinyin": "Kàn",
+          "meaning": "Khán/Nhìn",
+          "mnemonic": "Lấy bàn tay (Thủ) che lên trên mắt (Mục) để nhìn cho xa.",
+          "components": [
+            { "part": "手", "name": "Thủ", "pinyin": "shǒu", "meaning": "Tay" },
+            { "part": "目", "name": "Mục", "pinyin": "mù", "meaning": "Mắt" }
+          ]
+        },
+        {
+          "char": "书",
+          "pinyin": "Shū",
+          "meaning": "Thư/Sách",
+          "mnemonic": "Cầm cây bút (nét sổ) viết lên giấy từng bậc thang tri thức.",
+          "components": [
+            { "part": "丨", "name": "Sổ", "pinyin": "shù", "meaning": "Nét sổ" }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "做饭",
+      "chunk_pinyin": "Zuòfàn",
+      "chunk_meaning": "Nấu cơm/Làm cơm.",
+      "characters": [
+        {
+          "char": "做",
+          "pinyin": "Zuò",
+          "meaning": "Làm (Tố)",
+          "mnemonic": "Người (Nhân) già (Cổ) rồi vẫn bị cầm roi (Phộc - đánh khẽ) bắt làm việc.",
+          "components": [
+            {
+              "part": "亻",
+              "name": "Nhân đứng",
+              "pinyin": "rén",
+              "meaning": "Người"
+            },
+            { "part": "古", "name": "Cổ", "pinyin": "gǔ", "meaning": "Cũ/Xưa" },
+            {
+              "part": "攵",
+              "name": "Phộc",
+              "pinyin": "pū",
+              "meaning": "Đánh khẽ"
+            }
+          ]
+        },
+        {
+          "char": "饭",
+          "pinyin": "Fàn",
+          "meaning": "Phạn/Cơm",
+          "mnemonic": "Muốn có cái ăn (Thực) thì phải làm việc ngược xuôi (Phản - lật lại).",
+          "components": [
+            {
+              "part": "饣",
+              "name": "Thực",
+              "pinyin": "shí",
+              "meaning": "Ăn uống"
+            },
+            {
+              "part": "反",
+              "name": "Phản",
+              "pinyin": "fǎn",
+              "meaning": "Ngược lại"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "爱",
+      "chunk_pinyin": "Ài",
+      "chunk_meaning": "Yêu (Ái).",
+      "characters": [
+        {
+          "char": "爱",
+          "pinyin": "Ài",
+          "meaning": "Yêu",
+          "mnemonic": "Dùng móng vuốt/tay (Trảo) đón nhận tình cảm và trân trọng giữ gìn như bạn bè (Hữu).",
+          "components": [
+            {
+              "part": "爫",
+              "name": "Trảo",
+              "pinyin": "zhǎo",
+              "meaning": "Móng vuốt/Tay"
+            },
+            {
+              "part": "冖",
+              "name": "Mịch",
+              "pinyin": "mì",
+              "meaning": "Trùm khăn"
+            },
+            {
+              "part": "友",
+              "name": "Hữu",
+              "pinyin": "yǒu",
+              "meaning": "Bạn bè"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "打篮球",
+      "chunk_pinyin": "Dǎ lánqiú",
+      "chunk_meaning": "Chơi bóng rổ (Đánh bóng rổ).",
+      "characters": [
+        {
+          "char": "打",
+          "pinyin": "Dǎ",
+          "meaning": "Đả/Đánh",
+          "mnemonic": "Dùng tay (Thủ) cầm cây đinh (Đinh) đóng xuống -> Động tác đánh/đập.",
+          "components": [
+            { "part": "扌", "name": "Thủ", "pinyin": "shǒu", "meaning": "Tay" },
+            {
+              "part": "丁",
+              "name": "Đinh",
+              "pinyin": "dīng",
+              "meaning": "Cây đinh/Người"
+            }
+          ]
+        },
+        {
+          "char": "篮",
+          "pinyin": "Lán",
+          "meaning": "Lam/Giỏ",
+          "mnemonic": "Cái giỏ làm bằng tre (Trúc) dùng để giám sát (Giám) đồ đạc.",
+          "components": [
+            {
+              "part": "⺮",
+              "name": "Trúc",
+              "pinyin": "zhú",
+              "meaning": "Tre trúc"
+            },
+            {
+              "part": "监",
+              "name": "Giám",
+              "pinyin": "jiān",
+              "meaning": "Giám sát"
+            }
+          ]
+        },
+        {
+          "char": "球",
+          "pinyin": "Qiú",
+          "meaning": "Cầu/Bóng",
+          "mnemonic": "Viên ngọc (Vương) hình tròn để cầu (Cầu) may mắn -> Quả bóng.",
+          "components": [
+            {
+              "part": "王",
+              "name": "Vương",
+              "pinyin": "wáng",
+              "meaning": "Ngọc"
+            },
+            {
+              "part": "求",
+              "name": "Cầu",
+              "pinyin": "qiú",
+              "meaning": "Cầu xin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "听音乐",
+      "chunk_pinyin": "Tīng yīnyuè",
+      "chunk_meaning": "Nghe nhạc.",
+      "characters": [
+        {
+          "char": "听",
+          "pinyin": "Tīng",
+          "meaning": "Thính/Nghe",
+          "mnemonic": "Dùng miệng (Khẩu) nói cho cái rìu (Cân - trọng lượng) nghe -> Chữ giản thể, nên nhớ theo âm: Khẩu + Cân.",
+          "components": [
+            {
+              "part": "口",
+              "name": "Khẩu",
+              "pinyin": "kǒu",
+              "meaning": "Miệng"
+            },
+            {
+              "part": "斤",
+              "name": "Cân",
+              "pinyin": "jīn",
+              "meaning": "Cái rìu/Cân"
+            }
+          ]
+        },
+        {
+          "char": "音",
+          "pinyin": "Yīn",
+          "meaning": "Âm/Tiếng",
+          "mnemonic": "Đứng (Lập) dưới mặt trời (Nhật) hét lên tạo ra âm thanh.",
+          "components": [
+            { "part": "立", "name": "Lập", "pinyin": "lì", "meaning": "Đứng" },
+            {
+              "part": "日",
+              "name": "Nhật",
+              "pinyin": "rì",
+              "meaning": "Mặt trời"
+            }
+          ]
+        },
+        {
+          "char": "乐",
+          "pinyin": "Yuè",
+          "meaning": "Nhạc/Vui",
+          "mnemonic": "Chữ Tiểu (nhỏ) ở trên, phía dưới là mộc (cây) -> Tiếng nhạc ríu rít trên cây.",
+          "components": [
+            { "part": "小", "name": "Tiểu", "pinyin": "xiǎo", "meaning": "Nhỏ" }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "每天",
+      "chunk_pinyin": "Měitiān",
+      "chunk_meaning": "Mỗi ngày.",
+      "characters": [
+        {
+          "char": "每",
+          "pinyin": "Měi",
+          "meaning": "Mỗi",
+          "mnemonic": "Người Mẹ (Mẫu) luôn chăm lo cho con 'mỗi' ngày.",
+          "components": [
+            { "part": "母", "name": "Mẫu", "pinyin": "mǔ", "meaning": "Mẹ" }
+          ]
+        },
+        {
+          "char": "天",
+          "pinyin": "Tiān",
+          "meaning": "Thiên/Trời",
+          "mnemonic": "Người (Nhân) dang tay đứng dưới một (Nhất) bầu trời bao la.",
+          "components": [
+            { "part": "一", "name": "Nhất", "pinyin": "yī", "meaning": "Một" },
+            { "part": "大", "name": "Đại", "pinyin": "dà", "meaning": "To lớn" }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "晚上",
+      "chunk_pinyin": "Wǎnshang",
+      "chunk_meaning": "Buổi tối.",
+      "characters": [
+        {
+          "char": "晚",
+          "pinyin": "Wǎn",
+          "meaning": "Vãn/Muộn",
+          "mnemonic": "Mặt trời (Nhật) đã lặn, người ta miễn (Miễn) làm việc vì trời đã muộn.",
+          "components": [
+            {
+              "part": "日",
+              "name": "Nhật",
+              "pinyin": "rì",
+              "meaning": "Mặt trời"
+            },
+            {
+              "part": "免",
+              "name": "Miễn",
+              "pinyin": "miǎn",
+              "meaning": "Miễn trừ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "一起",
+      "chunk_pinyin": "Yìqǐ",
+      "chunk_meaning": "Cùng nhau (Nhất khởi).",
+      "characters": [
+        {
+          "char": "一",
+          "pinyin": "Yī",
+          "meaning": "Nhất/Một",
+          "mnemonic": "Một nét gạch ngang, tượng trưng cho số 1.",
+          "components": [
+            { "part": "一", "name": "Nhất", "pinyin": "yī", "meaning": "Số 1" }
+          ]
+        },
+        {
+          "char": "起",
+          "pinyin": "Qǐ",
+          "meaning": "Khởi/Dậy",
+          "mnemonic": "Tự mình (Kỷ) bước đi (Tẩu) để bắt đầu làm việc 'cùng nhau'.",
+          "components": [
+            { "part": "走", "name": "Tẩu", "pinyin": "zǒu", "meaning": "Đi" },
+            {
+              "part": "己",
+              "name": "Kỷ",
+              "pinyin": "jǐ",
+              "meaning": "Bản thân"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "吃饭",
+      "chunk_pinyin": "Chīfàn",
+      "chunk_meaning": "Ăn cơm.",
+      "characters": [
+        {
+          "char": "吃",
+          "pinyin": "Chī",
+          "meaning": "Cật/Ăn",
+          "mnemonic": "Miệng (Khẩu) đang xin ăn (Khất - cầu xin).",
+          "components": [
+            {
+              "part": "口",
+              "name": "Khẩu",
+              "pinyin": "kǒu",
+              "meaning": "Miệng"
+            },
+            {
+              "part": "乞",
+              "name": "Khất",
+              "pinyin": "qǐ",
+              "meaning": "Cầu xin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "周末",
+      "chunk_pinyin": "Zhōumò",
+      "chunk_meaning": "Cuối tuần (Chu mạt).",
+      "characters": [
+        {
+          "char": "周",
+          "pinyin": "Zhōu",
+          "meaning": "Chu/Tuần",
+          "mnemonic": "Dùng đất (Thổ) bao quanh miệng (Khẩu) đi một vòng là một chu kỳ/tuần.",
+          "components": [
+            { "part": "土", "name": "Thổ", "pinyin": "tǔ", "meaning": "Đất" },
+            {
+              "part": "口",
+              "name": "Khẩu",
+              "pinyin": "kǒu",
+              "meaning": "Miệng"
+            }
+          ]
+        },
+        {
+          "char": "末",
+          "pinyin": "Mò",
+          "meaning": "Mạt/Cuối",
+          "mnemonic": "Cây (Mộc) mà gạch một nét dài ở trên ngọn -> Ngọn cây, phần cuối cùng.",
+          "components": [
+            { "part": "一", "name": "Nhất", "pinyin": "yī", "meaning": "Một" },
+            { "part": "木", "name": "Mộc", "pinyin": "mù", "meaning": "Cây" }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "去",
+      "chunk_pinyin": "Qù",
+      "chunk_meaning": "Đi (Khứ).",
+      "characters": [
+        {
+          "char": "去",
+          "pinyin": "Qù",
+          "meaning": "Khứ/Đi",
+          "mnemonic": "Đất (Thổ) ở dưới, tư (Khư) ở trên. Bỏ cái riêng tư chôn xuống đất để ra đi.",
+          "components": [
+            { "part": "土", "name": "Thổ", "pinyin": "tǔ", "meaning": "Đất" },
+            {
+              "part": "厶",
+              "name": "Khư",
+              "pinyin": "sī",
+              "meaning": "Riêng tư"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "公园",
+      "chunk_pinyin": "Gōngyuán",
+      "chunk_meaning": "Công viên.",
+      "characters": [
+        {
+          "char": "公",
+          "pinyin": "Gōng",
+          "meaning": "Công cộng",
+          "mnemonic": "Cái gì không phải riêng tư (Khư - ở trên là Bát, dưới là Khư) thì là của chung (Công).",
+          "components": [
+            { "part": "八", "name": "Bát", "pinyin": "bā", "meaning": "Số 8" },
+            {
+              "part": "厶",
+              "name": "Khư",
+              "pinyin": "sī",
+              "meaning": "Riêng tư"
+            }
+          ]
+        },
+        {
+          "char": "园",
+          "pinyin": "Yuán",
+          "meaning": "Viên/Vườn",
+          "mnemonic": "Một vùng đất được vây quanh (Vi) bên trong có tiền (Nguyên) -> Khu vườn giá trị.",
+          "components": [
+            {
+              "part": "囗",
+              "name": "Vi",
+              "pinyin": "wéi",
+              "meaning": "Vây quanh"
+            },
+            {
+              "part": "元",
+              "name": "Nguyên",
+              "pinyin": "yuán",
+              "meaning": "Tiền/Đứng đầu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "玩",
+      "chunk_pinyin": "Wán",
+      "chunk_meaning": "Chơi (Ngoạn).",
+      "characters": [
+        {
+          "char": "玩",
+          "pinyin": "Wán",
+          "meaning": "Ngoạn/Chơi",
+          "mnemonic": "Vua (Vương) cầm đồng tiền (Nguyên) để chơi đùa.",
+          "components": [
+            {
+              "part": "王",
+              "name": "Vương",
+              "pinyin": "wáng",
+              "meaning": "Ngọc/Vua"
+            },
+            {
+              "part": "元",
+              "name": "Nguyên",
+              "pinyin": "yuán",
+              "meaning": "Tiền/Gốc"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_cn": "家人",
+      "chunk_pinyin": "Jiārén",
+      "chunk_meaning": "Người nhà/Gia đình.",
+      "characters": [
+        {
+          "char": "家",
+          "pinyin": "Jiā",
+          "meaning": "Gia/Nhà",
+          "mnemonic": "Con lợn (Thỉ) dưới mái nhà (Miên).",
+          "components": [
+            {
+              "part": "宀",
+              "name": "Miên",
+              "pinyin": "mián",
+              "meaning": "Mái nhà"
+            },
+            {
+              "part": "豕",
+              "name": "Thỉ",
+              "pinyin": "shǐ",
+              "meaning": "Con lợn"
+            }
+          ]
+        },
+        {
+          "char": "人",
+          "pinyin": "Rén",
+          "meaning": "Nhân/Người",
+          "mnemonic": "Hình ảnh người đang bước đi.",
+          "components": [
+            {
+              "part": "人",
+              "name": "Nhân",
+              "pinyin": "rén",
+              "meaning": "Người"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

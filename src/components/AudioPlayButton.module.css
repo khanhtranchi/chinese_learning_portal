@@ -1,0 +1,19 @@
+.playButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.playButton:hover {
+  transform: scale(1.1);
+}
+
+.playButton:active {
+  transform: scale(0.95);
+}
+
