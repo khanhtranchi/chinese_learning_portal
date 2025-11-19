@@ -83,6 +83,7 @@
 
 .controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
   margin-top: 20px;
@@ -108,5 +109,31 @@
 .button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.primaryButton {
+  border-color: #52c41a;
+  color: #52c41a;
+}
+
+.primaryButton:hover:not(:disabled) {
+  background: #52c41a;
+  color: white;
+}
+
+.helperText {
+  margin: 0;
+  font-size: 14px;
+  color: #595959;
+  text-align: center;
+}
+
+.statusMessage {
+  text-align: center;
+  font-size: 14px;
+  color: #262626;
+  font-weight: 500;
+  margin-top: -10px;
+  margin-bottom: 4px;
 }
 

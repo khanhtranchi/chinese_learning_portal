@@ -7,67 +7,104 @@ interface HanziWriterModalProps {
   character: string;
   isOpen: boolean;
   onClose: () => void;
+  onSave?: (char: string) => void;
+  title?: string;
 }
 
 export default function HanziWriterModal({
   character,
   isOpen,
   onClose,
+  onSave,
+  title,
 }: HanziWriterModalProps) {
   const writerRef = useRef<any>(null);
   const targetRef = useRef<HTMLDivElement>(null);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isBusy, setIsBusy] = useState(false);
+  const [hasCompletedQuiz, setHasCompletedQuiz] = useState(false);
+  const [isOutlineVisible, setIsOutlineVisible] = useState(false);
+  const isFillMode = Boolean(onSave);
 
   useEffect(() => {
     if (!isOpen || !targetRef.current) return;
 
-    // Tạo HanziWriter instance
+    targetRef.current.innerHTML = '';
+    setHasCompletedQuiz(false);
+    setIsOutlineVisible(false);
+
     try {
       writerRef.current = HanziWriter.create(targetRef.current, character, {
         width: 300,
         height: 300,
         padding: 10,
-        showOutline: true,
+        showOutline: false,
+        showCharacter: false,
         strokeColor: '#000000',
         radicalColor: '#ff0000',
+        highlightOnComplete: true,
+        showHintAfterMisses: 2,
       });
     } catch (error) {
       console.error('Error creating HanziWriter:', error);
       return;
     }
 
-    // Tự động phát animation khi mở
-    setIsAnimating(true);
-    writerRef.current.animateCharacter({
-      onComplete: () => setIsAnimating(false),
-    });
+    writerRef.current.hideCharacter?.();
+    writerRef.current.hideOutline?.();
 
-    return () => {
-      if (writerRef.current) {
-        writerRef.current = null;
-      }
-    };
-  }, [character, isOpen]);
-
-  const handleReplay = () => {
-    if (writerRef.current) {
-      setIsAnimating(true);
+    if (!isFillMode) {
+      setIsBusy(true);
       writerRef.current.animateCharacter({
-        onComplete: () => setIsAnimating(false),
+        onComplete: () => setIsBusy(false),
       });
-    }
-  };
-
-  const handleQuiz = () => {
-    if (writerRef.current) {
-      setIsAnimating(true);
+    } else {
+      setHasCompletedQuiz(false);
       writerRef.current.quiz({
-        onComplete: () => setIsAnimating(false),
-        onMistake: (strokeData) => {
+        onComplete: () => {
+          setHasCompletedQuiz(true);
+        },
+        onMistake: (strokeData: any) => {
           console.log('Mistake on stroke:', strokeData);
         },
       });
     }
+
+    return () => {
+      if (writerRef.current) {
+        writerRef.current.cancelQuiz?.();
+        writerRef.current.hideCharacter?.();
+        writerRef.current.hideOutline?.();
+      writerRef.current = null;
+      }
+      if (targetRef.current) {
+        targetRef.current.innerHTML = '';
+      }
+    };
+  }, [character, isOpen, isFillMode]);
+
+  const handleReplay = () => {
+    if (!writerRef.current) return;
+    setIsBusy(true);
+    writerRef.current.animateCharacter({
+      onComplete: () => setIsBusy(false),
+    });
+  };
+
+  const handleToggleOutline = () => {
+    if (!writerRef.current) return;
+    if (isOutlineVisible) {
+      writerRef.current.hideOutline?.();
+      setIsOutlineVisible(false);
+    } else {
+      writerRef.current.showOutline?.();
+      setIsOutlineVisible(true);
+    }
+  };
+
+  const handleSave = () => {
+    if (!onSave) return;
+    onSave(character);
+    onClose();
   };
 
   if (!isOpen) return null;
@@ -78,23 +115,52 @@ export default function HanziWriterModal({
         <button className={styles.closeButton} onClick={onClose}>
           ✕
         </button>
-        <h3 className={styles.title}>Cách viết: {character}</h3>
+        <h3 className={styles.title}>
+          {title || `Cách viết: ${character}`}
+        </h3>
+        {isFillMode && (
+          <p className={styles.helperText}>
+            Hãy vẽ đủ nét rồi lưu chữ này vào chỗ trống. Bạn có thể bật gợi ý
+            viền nếu cần.
+          </p>
+        )}
         <div ref={targetRef} className={styles.writerContainer} />
+        {isFillMode && (
+          <div className={styles.statusMessage}>
+            {hasCompletedQuiz ? '✅ Đã hoàn thành nét viết' : '✏️ Chưa hoàn thành bài viết'}
+          </div>
+        )}
         <div className={styles.controls}>
-          <button
-            className={styles.button}
-            onClick={handleReplay}
-            disabled={isAnimating}
-          >
-            🔄 Xem lại
+          <button className={styles.button} onClick={handleToggleOutline}>
+            {isOutlineVisible ? '🙈 Ẩn gợi ý' : '💡 Gợi ý'}
           </button>
-          <button
-            className={styles.button}
-            onClick={handleQuiz}
-            disabled={isAnimating}
-          >
-            ✏️ Luyện viết
-          </button>
+          {!isFillMode && (
+            <button
+              className={styles.button}
+              onClick={handleReplay}
+              disabled={isBusy}
+            >
+              🔄 Xem lại
+            </button>
+          )}
+          {isFillMode ? null : (
+            <button
+              className={styles.button}
+              onClick={() => writerRef.current?.quiz()}
+              disabled={isBusy}
+            >
+              ✏️ Luyện viết
+            </button>
+          )}
+          {isFillMode && onSave && (
+            <button
+              className={`${styles.button} ${styles.primaryButton}`}
+              onClick={handleSave}
+              disabled={!hasCompletedQuiz}
+            >
+              💾 Lưu vào chỗ trống
+            </button>
+          )}
         </div>
       </div>
     </div>

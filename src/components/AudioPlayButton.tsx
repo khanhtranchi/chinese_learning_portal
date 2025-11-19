@@ -1,12 +1,16 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './AudioPlayButton.module.css';
 
 interface AudioPlayButtonProps {
   src: string;
+  autoPlayToken?: number;
 }
 
-export default function AudioPlayButton({ src }: AudioPlayButtonProps) {
+export default function AudioPlayButton({
+  src,
+  autoPlayToken,
+}: AudioPlayButtonProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -41,6 +45,53 @@ export default function AudioPlayButton({ src }: AudioPlayButtonProps) {
     setHasError(true);
     setIsPlaying(false);
   };
+
+  useEffect(() => {
+    if (autoPlayToken === undefined || autoPlayToken === 0) {
+      return;
+    }
+    const audio = audioRef.current;
+    if (!audio) {
+      return;
+    }
+    audio.pause();
+    audio.currentTime = 0;
+    setHasError(false);
+    setIsPlaying(false);
+
+    const playAudio = () => {
+      audio
+        .play()
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch((error) => {
+          console.error('Error auto-playing audio:', error);
+          setHasError(true);
+          setIsPlaying(false);
+        });
+    };
+
+    if (
+      audio.readyState >= HTMLMediaElement.HAVE_ENOUGH_DATA ||
+      audio.buffered.length > 0
+    ) {
+      playAudio();
+      return;
+    }
+
+    const handleCanPlay = () => {
+      audio.removeEventListener('canplaythrough', handleCanPlay);
+      playAudio();
+    };
+
+    audio.addEventListener('canplaythrough', handleCanPlay);
+    audio.load();
+
+    return () => {
+      audio.removeEventListener('canplaythrough', handleCanPlay);
+    };
+  }, [autoPlayToken]);
 
   // Nếu có lỗi, không hiển thị button
   if (hasError) {
