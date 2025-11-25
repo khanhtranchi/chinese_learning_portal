@@ -1,0 +1,16 @@
+[project]
+name = "chinese-docusaurus"
+version = "0.1.0"
+description = "Docusaurus site for learning Chinese with automated lesson generation scripts"
+requires-python = ">=3.10"
+dependencies = [
+    "edge-tts>=6.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = false # Báo uv không build root folder như một package
+

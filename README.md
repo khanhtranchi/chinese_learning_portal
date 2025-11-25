@@ -40,20 +40,33 @@ GIT_USER=<Your GitHub username> yarn deploy
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
-## Lesson audio (HSK1)
+## Python Scripts và Audio Generation
 
-The first HSK1 lesson can generate per-line audio clips via [edge-tts](https://github.com/rany2/edge-tts).
+Project này sử dụng [uv](https://github.com/astral-sh/uv) để quản lý môi trường Python và dependencies.
 
-1. Install the CLI once inside WSL:
+### Thiết lập Python Environment
 
-   ```bash
-   python3 -m pip install --user edge-tts
-   ```
+```bash
+# Cài đặt uv (nếu chưa có)
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-2. Generate audio files (creates `static/audio/hsk1/lesson-1/line-XX.mp3` and skips existing files):
+# Thiết lập môi trường và cài đặt dependencies
+uv sync
+```
 
-   ```bash
-   python3 scripts/generate_lesson1_audio.py
-   ```
+### Tạo Audio cho Bài Học
 
-3. Restart `npm start` if it was running so the dev server can serve the new static files.
+Scripts có thể tạo audio cho các bài học từ file JSON sử dụng [edge-tts](https://github.com/rany2/edge-tts):
+
+```bash
+# Sử dụng uv run để chạy script
+uv run python scripts/generate_lesson.py lessons/hsk/hsk1/lesson-1.json
+
+# Hoặc kích hoạt virtual environment trước
+source .venv/bin/activate  # Linux/WSL2/macOS
+python scripts/generate_lesson.py lessons/hsk/hsk1/lesson-1.json
+```
+
+Xem thêm chi tiết trong [scripts/README.md](scripts/README.md).
+
+**Lưu ý:** Restart `yarn start` nếu dev server đang chạy để serve các file audio mới.

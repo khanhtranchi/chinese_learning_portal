@@ -1,6 +1,15 @@
 # Dependencies
 /node_modules
 
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+
 # Production
 /build
 
